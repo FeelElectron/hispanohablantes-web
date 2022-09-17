@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/index.css">
+    <head>
+        <title>Página web</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+     <a href="#es" data-reload>Español</a>
+     <a href="#eng" data-reload>English</a>
+     
+
+     <p id="hi">
+        Todo es posible.
+     </p>
+
+<!--Javascript (Inicio-Idioma)-->     
+     <script>
+        
+        var idioma = {
+            es: {
+                texto1: "Todo es posible."
+            },
+            eng: {
+                texto1: "All is posible."
+            }
+        };
+
+        if (window.location.hash) {
+            if (window.location.hash === "#eng") {
+                hi.textContent = idioma.eng.texto1;
+            
+            }
+        }
+
+     </script>
+<!--Javascript (Final-Idioma)-->
+    </body>
+</html>
